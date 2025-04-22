@@ -2,166 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Our Services | Ubuhle Bethu</title>
-  <meta name="description" content="Window tinting, frosting, branding, signage, and more. Elevate your home or business with Ubuhle Bethu's modern solutions.">
-
+  <meta name="description" content="Expert window tinting, wallpaper applications, vehicle branding, and quality supplies. Ubuhle Bethu elevates spaces and brands across South Africa.">
+  
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
+  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Favicon -->
-  <link rel="icon" href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
+  
   <!-- Header -->
-  <header class="header">
+  <header class="header" role="banner">
     <div class="container">
       <a href="index.html" class="logo">
         <img src="assets/logo.jpg" alt="Ubuhle Bethu Logo" class="logo-img">
       </a>
-
-      <nav class="navbar">
+      <nav class="navbar" role="navigation" aria-label="Main Navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="services.html" class="dropdown-toggle">Services ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="#home-solutions">Home Solutions</a></li>
-              <li><a href="#business-branding">Business Branding</a></li>
-              <li><a href="#supplies">Supplies</a></li>
-            </ul>
-          </li>
+          <li><a href="services.html" class="active">Services</a></li> <!-- Active class for current page -->
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li> <!-- Added Blog link -->
         </ul>
       </nav>
-
-      <a href="https://wa.me/27815859755" class="btn whatsapp-btn">Get Quote</a>
-      <div class="menu-toggle" aria-label="Toggle Navigation">☰</div>
+      <a href="https://wa.me/27815859755" class="btn whatsapp-btn">Get a Quote</a>
+      <button class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
     </div>
   </header>
 
-  <!-- Services Hero Section -->
-  <section class="page-hero">
-    <div class="container">
-      <h1>Our <span>Services</span></h1>
-      <p>Transform your space with Ubuhle Bethu’s premium solutions for homes and businesses. Quality installations, expert craftsmanship, and customized designs.</p>
-    </div>
-  </section>
+  <!-- Main Content -->
+  <main role="main">
 
-  <!-- Services Overview -->
-  <section class="services-page">
-    <div class="container">
-
-      <!-- Home Solutions -->
-      <div class="service-category" id="home-solutions">
-        <h2>Home Solutions</h2>
-        <div class="services-grid">
-
-          <div class="service-card detailed">
-            <img src="images/window-tinting.jpg" alt="Window Tinting and Frosting" loading="lazy">
-            <div class="service-info">
-              <h3>Window Tinting & Frosting</h3>
-              <p><strong>Benefits:</strong> UV protection, privacy, safety, and energy efficiency.</p>
-              <p><strong>Pricing:</strong> R300–R550 per m² (varies by film type and surface area).</p>
-              <p>Our films protect your interiors, improve security, and give your home a stylish, modern look while saving on energy costs.</p>
-              <a href="contact.html" class="btn">Get a Quote</a>
-            </div>
-          </div>
-
-          <div class="service-card detailed">
-            <img src="images/wallpaper.jpg" alt="Wallpaper Application" loading="lazy">
-            <div class="service-info">
-              <h3>Wallpaper Application</h3>
-              <p><strong>Benefits:</strong> Stylish, low-maintenance, and fast installation for stunning spaces.</p>
-              <p><strong>Pricing:</strong> R500–R1,200 per roll installed (depending on design and wall size).</p>
-              <p>Give your rooms character and style with high-quality wallpaper designs, professionally installed by our experienced team.</p>
-              <a href="contact.html" class="btn">Get a Quote</a>
-            </div>
-          </div>
-
-        </div>
+    <!-- Services Hero Section -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Our <span>Services</span></h1>
+        <p>Ubuhle Bethu offers expert solutions to elevate your living and workspaces. Trusted by homes and businesses across South Africa.</p>
       </div>
+    </section>
 
-      <!-- Business Branding -->
-      <div class="service-category" id="business-branding">
-        <h2>Business Branding</h2>
-        <div class="services-grid">
+    <!-- Services Overview -->
+    <section class="services-page">
+      <div class="container">
 
-          <div class="service-card detailed">
-            <img src="images/car-wrapping.jpg" alt="Car Wrapping Services" loading="lazy">
-            <div class="service-info">
-              <h3>Car Wrapping</h3>
-              <p><strong>Benefits:</strong> Brand visibility, protection, and professional appearance.</p>
-              <p><strong>Pricing:</strong> R5,000–R15,000 per vehicle (size and design dependent).</p>
-              <p>From partial wraps to full fleet branding, we create striking designs that turn every vehicle into a moving advertisement.</p>
-              <a href="contact.html" class="btn">Get a Quote</a>
+        <p class="pricing-note">(All prices are listed in South African Rand — ZAR)</p>
+
+        <!-- Home Solutions -->
+        <div class="service-category" id="home-solutions">
+          <h2>Home Solutions</h2>
+          <div class="services-grid">
+
+            <div class="service-card detailed">
+              <img src="images/window-tinting.jpg" alt="Premium Window Tinting and Frosting for Homes" loading="lazy">
+              <div class="service-info">
+                <h3 id="window-tinting">Window Tinting & Frosting</h3>
+                <p><strong>Highlights:</strong> UV protection, enhanced privacy, energy savings, and security.</p>
+                <p><strong>Investment:</strong> R300–R550 per m² (film type and coverage dependent).</p>
+                <p>Upgrade your home's efficiency and aesthetics with premium window films — crafted to protect, save, and impress.</p>
+                <a href="contact.html" class="btn">Request a Quote</a>
+              </div>
             </div>
-          </div>
 
-          <div class="service-card detailed">
-            <img src="images/tshirt-printing.jpg" alt="Custom T-Shirt and Cap Printing" loading="lazy">
-            <div class="service-info">
-              <h3>T-Shirt & Cap Printing</h3>
-              <p><strong>Benefits:</strong> High-quality prints, bulk order discounts, and fast turnaround.</p>
-              <p><strong>Pricing:</strong> R80–R250 per item (bulk deals available).</p>
-              <p>Stand out at events or in-store with professionally printed apparel, perfect for promotions, uniforms, or merchandise sales.</p>
-              <a href="contact.html" class="btn">Get a Quote</a>
+            <div class="service-card detailed">
+              <img src="images/wallpaper.jpg" alt="Modern Wallpaper Application on Interior Walls" loading="lazy">
+              <div class="service-info">
+                <h3 id="wallpaper-application">Wallpaper Applications</h3>
+                <p><strong>Highlights:</strong> Designer styles, low maintenance, quick transformations.</p>
+                <p><strong>Investment:</strong> R500–R1,200 per roll (design and wall size dependent).</p>
+                <p>Transform blank walls into breathtaking spaces with our curated range of wallpapers, applied with precision and care.</p>
+                <a href="contact.html" class="btn">Request a Quote</a>
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
-      </div>
 
-      <!-- Supplies -->
-      <div class="service-category" id="supplies">
-        <h2>Supplies & Products</h2>
-        <div class="services-grid">
+        <!-- Business Branding -->
+        <div class="service-category" id="business-branding">
+          <h2>Business Branding</h2>
+          <div class="services-grid">
 
-          <div class="service-card detailed">
-            <img src="images/film-supplies.jpg" alt="Window Film Supplies" loading="lazy">
-            <div class="service-info">
-              <h3>Window Film Supplies</h3>
-              <p><strong>Benefits:</strong> Premium quality films for DIY or professional application.</p>
-              <p><strong>Pricing:</strong> Starting at R300 per meter.</p>
-              <p>Choose from our wide selection of solar control, safety, and decorative films. Perfect for homeowners and contractors alike.</p>
-              <a href="contact.html" class="btn">Get a Quote</a>
+            <div class="service-card detailed">
+              <img src="images/car-wrapping.jpg" alt="Vehicle Branding and Professional Car Wrapping" loading="lazy">
+              <div class="service-info">
+                <h3 id="vehicle-branding">Vehicle Branding & Wrapping</h3>
+                <p><strong>Highlights:</strong> High-visibility marketing, vehicle protection, professional finishes.</p>
+                <p><strong>Investment:</strong> R5,000–R15,000 per vehicle (design and size dependent).</p>
+                <p>Turn every drive into a marketing opportunity with bold, creative wraps and brand designs for your fleet or personal car.</p>
+                <a href="contact.html" class="btn">Request a Quote</a>
+              </div>
             </div>
+
+            <div class="service-card detailed">
+              <img src="images/tshirt-printing.jpg" alt="Custom T-Shirts and Cap Printing Services" loading="lazy">
+              <div class="service-info">
+                <h3 id="apparel-printing">Custom Apparel Printing</h3>
+                <p><strong>Highlights:</strong> Vibrant prints, bulk discounts, event-ready branding.</p>
+                <p><strong>Investment:</strong> R80–R250 per item (special rates for bulk orders).</p>
+                <p>Outfit your team or event with high-quality printed shirts, caps, and merch that leave a lasting impression.</p>
+                <a href="contact.html" class="btn">Request a Quote</a>
+              </div>
+            </div>
+
           </div>
-
         </div>
+
+        <!-- Supplies -->
+        <div class="service-category" id="supplies">
+          <h2>Supplies & Products</h2>
+          <div class="services-grid">
+
+            <div class="service-card detailed">
+              <img src="images/film-supplies.jpg" alt="Professional Window Film Supplies" loading="lazy">
+              <div class="service-info">
+                <h3 id="window-film-supplies">Window Film Supplies</h3>
+                <p><strong>Highlights:</strong> DIY ready, professional-grade quality, diverse finishes.</p>
+                <p><strong>Starting Price:</strong> From R300 per meter.</p>
+                <p>Stock up on premium-quality window films ideal for both homeowners and contractors looking for superior results.</p>
+                <a href="contact.html" class="btn">Request a Quote</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container">
+        <h3>Bring Your Dream to Life!</h3>
+        <p>Let’s chat about your unique project — we’ll make it happen with excellence and passion.</p>
+        <a href="https://wa.me/27815859755" class="btn">Start a Chat</a>
+      </div>
+    </section>
 
-  <!-- CTA Banner -->
-  <section class="cta-banner">
-    <div class="container">
-      <h3>Need a Custom Solution?</h3>
-      <p>We tailor our products and services to fit your needs. Let’s create something amazing together!</p>
-      <a href="https://wa.me/27815859755" class="btn">Chat with Us on WhatsApp</a>
-    </div>
-  </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-content">
         <div class="footer-col">
           <h4>Ubuhle Bethu</h4>
-          <p>Premium home and business solutions crafted for South Africa. Stylish. Durable. Reliable.</p>
+          <p>Crafting stylish, durable, and impactful spaces and brands for homes and businesses nationwide.</p>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
           <p>📞 081 585 9755</p>
-          <p>📍 Serving clients nationwide</p>
+          <p>📍 Proudly serving all of South Africa</p>
         </div>
         <div class="footer-col">
           <h4>Quick Links</h4>
@@ -169,6 +169,7 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li> <!-- Added Blog link -->
           </ul>
         </div>
       </div>
@@ -179,7 +180,7 @@
 
   <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/27815859755" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <img src="assets/whatsapp-icon.svg" alt="WhatsApp Chat">
+    <img src="assets/whatsapp-icon.svg" alt="Chat on WhatsApp">
   </a>
 
   <!-- Scripts -->
